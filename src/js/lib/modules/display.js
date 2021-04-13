@@ -22,7 +22,7 @@ $.prototype.hide = function () {
 
     return this;
 };
-// Toggle (добавление/удаления стилей)
+// Toggle (добавление/удаления элементов)
 $.prototype.toggle = function () {
     for (let i = 0; i < this.length; i++) {
         if (!this[i].style) {
