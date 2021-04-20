@@ -13,3 +13,5 @@ $('.active').removeAttribute('data-modal', 'true').toggleAttribute('data-modal',
 
 // console.log($('div').eq(2).finde('.more'));
 console.log($('.mores').eq(0).siblings());
+
+$('button').fadeIn(1800);
