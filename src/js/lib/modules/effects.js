@@ -57,18 +57,17 @@ $.prototype.fadeOut = function (durection, finaly) {
     return this;
 };
 // Анимация FadeToggle
-$.prototype.fadeToggle = function (durection, display, finaly) {
+$.prototype.fadeToggle = function(dur, display, fin) {
     for (let i = 0; i < this.length; i++) {
-
         if (window.getComputedStyle(this[i]).display === 'none') {
             this[i].style.display = display || 'block';
 
             const _fadeIn = (complection) => {
                 this[i].style.opacity = complection;
             };
-
-            const anim = this.animateOverTime(durection, _fadeIn, finaly);
-            requestAnimationFrame(anim);
+    
+            const ani = this.animateOverTime(dur, _fadeIn, fin);
+            requestAnimationFrame(ani);
         } else {
             const _fadeOut = (complection) => {
                 this[i].style.opacity = 1 - complection;
@@ -76,9 +75,9 @@ $.prototype.fadeToggle = function (durection, display, finaly) {
                     this[i].style.display = 'none';
                 }
             };
-
-            const anim = this.animateOverTime(durection, _fadeOut, finaly);
-            requestAnimationFrame(anim);
+    
+            const ani = this.animateOverTime(dur, _fadeOut, fin);
+            requestAnimationFrame(ani);
         }
     }
 

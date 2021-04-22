@@ -18,7 +18,7 @@ $.prototype.modal = function (created) {
                 document.body.style.overflow = '';
 
                 if (created) {
-                    document.querySelector(target).remove();
+                    document.querySelector(target).remove() ;
                 }
             });
         });
@@ -28,7 +28,7 @@ $.prototype.modal = function (created) {
                 $(target).fadeOut(500);
                 document.body.style.overflow = '';
                 if (created) {
-                    document.querySelector(target.remove());
+                    document.querySelector(target).remove();
                 }
             }
         });

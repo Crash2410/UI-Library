@@ -41,7 +41,7 @@ $.prototype.index = function () {
 };
 
 // Получение определенных элементов среди уже выбранных
-$.prototype.finde = function (selector) {
+$.prototype.find = function (selector) {
     let numberOfItems = 0,
         counter = 0;
 
