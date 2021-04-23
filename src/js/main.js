@@ -44,3 +44,8 @@ $('#trigger').click(() => $('#trigger').createModal({
         ]
     }
 }));
+
+$().get('https://jsonplaceholder.cypress.io/todos/1')
+.then(res => {
+    console.log(res);
+});
